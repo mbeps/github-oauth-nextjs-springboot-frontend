@@ -2,7 +2,7 @@
 
 A modern OAuth 2.0 authentication demo application built with Next.js 15 and Spring Boot 3. 
 This frontend showcases secure GitHub OAuth integration, protected routes, and seamless user authentication with JWT-based session management. 
-The authentication logic if handled by the [backend server](https://github.com/mbeps/oauth-nextjs-springboot-backend) built using Spring Boot.
+The authentication logic if handled by the [backend server](https://github.com/mbeps/github-oauth-nextjs-springboot-backend) built using Spring Boot.
 
 The application implements secure token storage using httpOnly cookies, preventing XSS attacks whilst maintaining session persistence. 
 CORS is properly configured to enable secure cross-origin communication between the frontend and backend. 
@@ -41,7 +41,7 @@ Authenticated users can view their profile information:
 # Requirements
 These are the requirements needed to run the project:
 - Node.JS 22 LTS or higher
-- [Backend server configured and running](https://github.com/mbeps/oauth-nextjs-springboot-backend)
+- [Backend server configured and running](https://github.com/mbeps/github-oauth-nextjs-springboot-backend)
 
 # Stack
 These are the main technologies used in this project:
@@ -55,14 +55,14 @@ These are the main technologies used in this project:
 - [**Axios**](https://axios-http.com/): A promise-based HTTP client for making API requests with interceptors for token management.
 
 ## Back-End
-- [**Spring Boot Backend**](https://github.com/mbeps/oauth-nextjs-springboot-backend): A Java-based REST API that handles OAuth authentication, JWT token generation, and protected endpoint management.
+- [**Spring Boot Backend**](https://github.com/mbeps/github-oauth-nextjs-springboot-backend): A Java-based REST API that handles OAuth authentication, JWT token generation, and protected endpoint management.
 
 # Setting Up Project
 These are simple steps to run the application locally. For more detailed instructions, refer to the Wiki.
 
 ## 1. Clone the Project Locally
 ```sh
-git clone https://github.com/mbeps/oauth-nextjs-springboot-frontend.git
+git clone https://github.com/mbeps/github-oauth-nextjs-springboot-frontend.git
 cd oauth-nextjs-springboot-frontend
 ```
 
@@ -82,7 +82,7 @@ npm install
 ```
 
 ## 5. Start the Backend
-Ensure the [Spring Boot backend](https://github.com/mbeps/oauth-nextjs-springboot-backend) is running on `http://localhost:8080` (or your configured URL).
+Ensure the [Spring Boot backend](https://github.com/mbeps/github-oauth-nextjs-springboot-backend) is running on `http://localhost:8080` (or your configured URL).
 This will also need to be configured first.
 
 ## 6. Run the Frontend
@@ -122,7 +122,7 @@ The application automatically handles token refresh.
 When your access token expires, the system will use your refresh token to obtain a new access token without requiring re-authentication.
 
 # References
-- [Backend Repository](https://github.com/mbeps/oauth-nextjs-springboot-backend) 
+- [Backend Repository](https://github.com/mbeps/github-oauth-nextjs-springboot-backend) 
 - [Next.JS Documentation](https://nextjs.org/docs) 
 - [React.JS Documenation](https://react.dev/reference/react)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
